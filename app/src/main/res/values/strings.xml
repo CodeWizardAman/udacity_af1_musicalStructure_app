@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">MusicalApp</string>
+
+    <string name="BobMarleyDescription">With a legendary and ever-lengthening list of accomplishments attributable to both his life and music, Bob Marley allows listeners to forget their troubles and dance. </string>
+    <string name="LadyGagaDescription">Lady Gaga, born Stefani Joanne Angelina Germanotta, is an American songwriter, singer, actress, philanthropist, dancer</string>
+    <string name="MileyCyrusDescription">Miley Ray Cyrus (born Destiny Hope Cyrus; November 23, 1992) is an American singer, songwriter, and actress.</string>
+    <string name="song1">song 1</string>
+    <string name="song2">song 2</string>
+    <string name="song3">song 3</string>
+    <string name="song4">song 4</string>
+    <string name="nowPlayingDuration">00:00</string>
+    <string name="duration1">05:00</string>
+    <string name="duration2">04:35</string>
+    <string name="duration3">03:48</string>
+    <string name="duration4">04:20</string>
+    <string name="favActivityDes">This activity allows the user to play song from favorite list.</string>
+    <string name="nowPlayDes">Using this activity the user can play,pause, switch to different playlist etc.</string>
+    <string name="songName">Song Name</string>
+    <string name="artistDesc">User can click on artist and get to activity displaying the songs belonging to that artist, I have not implemented any event for this.</string>
+    <string name="playlistDescription">Using this activity the user can play, edit and customise songs in a list</string>
+    <string name="playlistText">Playlist</string>
+    <string name="settingDescription">Using this activity the user can control different settings using this activity</string>
+    <string name="autoSetting">Auto Repeat</string>
+    <string name="shakeSetting">Enable Shake</string>
+    <string name="equalizerSetting">Use System Equalizer</string>
+    <string name="paymentText">In-app Billing API can be used for payment handling.
+In-app Billing is a Google Play service that lets us sell digital content from inside our applications.
+Google Play handles all checkout details so our application never has to directly process any financial transactions.\n
+These steps must be followed to implement In-app Billing in application:\n
+1.Add the In-app Billing library to your project.\n
+2.Update AndroidManifest.xml file.\n
+3.Create a ServiceConnection and bind it to the IInAppBillingService.\n
+4.Send In-app Billing requests from application to IInAppBillingService.\n
+5. Handle In-app Billing responses from Google Play.\n
+</string>
+    <string name="paymentDesc">Using this activity user can use premium service of the app after successful payment</string>
+    <string name="artistLabel">Artist Activity</string>
+    <string name="playLabel">Now Playing Activity</string>
+    <string name="favLabel">Favorite Activity</string>
+    <string name="payLabel">Payment Activity</string>
+    <string name="playListLabel">Playlist Activity</string>
+    <string name="settingsLabel">Settings Activity</string>
+    <string name="mainLabel">Main Activity</string>
+</resources>

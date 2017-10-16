@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/scrollViewStyle"
+    android:background="@color/colorLightPink"
+    tools:context=".Artist">
+
+    <LinearLayout
+        style="@style/artistLinerLayoutStyle"
+        tools:context=".Artist">
+
+        <TextView
+            style="@style/activityLabelStyle"
+            android:background="@android:color/white"
+            android:text="@string/artistLabel"></TextView>>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:text="@string/artistDesc" />
+
+        <RelativeLayout style="@style/artistRelativeLayoutStyle">
+
+            <ImageView
+                android:id="@+id/bob_id"
+                style="@style/artistImageStyle"
+                android:src="@drawable/bob" />
+
+            <TextView
+                android:id="@+id/bob_textView"
+                style="@style/artistTextViewStyle"
+                android:layout_toRightOf="@+id/bob_id"
+                android:text="@string/BobMarleyDescription" />
+
+        </RelativeLayout>
+
+        <View
+            style="@style/dividerLineStyle"
+            android:background="@android:color/darker_gray" />
+
+        <RelativeLayout style="@style/artistRelativeLayoutStyle">
+
+            <ImageView
+                android:id="@+id/gaga_id"
+                style="@style/artistImageStyle"
+                android:src="@drawable/ladygaga" />
+
+            <TextView
+                android:id="@+id/a_textView"
+                style="@style/artistTextViewStyle"
+                android:layout_toRightOf="@+id/gaga_id"
+                android:text="@string/LadyGagaDescription" />
+
+        </RelativeLayout>
+
+        <View
+            style="@style/dividerLineStyle"
+            android:background="@android:color/darker_gray" />
+
+        <RelativeLayout style="@style/artistRelativeLayoutStyle">
+
+            <ImageView
+                android:id="@+id/miley_id"
+                style="@style/artistImageStyle"
+                android:src="@drawable/mileycyrus" />
+
+            <TextView
+                android:id="@+id/b_textView"
+                style="@style/artistTextViewStyle"
+                android:layout_toRightOf="@+id/miley_id"
+                android:text="@string/MileyCyrusDescription" />
+
+        </RelativeLayout>
+
+        <View
+            style="@style/dividerLineStyle"
+            android:background="@android:color/darker_gray" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp">
+
+            <Button
+                android:id="@+id/artist_nowPlay_id"
+                style="@style/rightButtonStyle"
+                android:background="@drawable/button_black_play" />
+
+            <Button
+                android:id="@+id/artist_home_btn_id"
+                style="@style/leftButtonStyle"
+                android:background="@drawable/home" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/scrollViewStyle"
+    android:background="@color/colorLightPink"
+    tools:context=".Playlist">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="8dp"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/activityLabelStyle"
+            android:background="@android:color/white"
+            android:text="@string/playListLabel" />
+
+        <TextView
+            style="@style/playlsitDesStyle"
+            android:background="@android:color/white"
+            android:text="@string/playlistDescription" />
+
+        <TextView
+            style="@style/playlistTextStyle"
+            android:background="@android:color/holo_orange_light"
+            android:text="@string/playlistText" />
+
+        <TextView
+            style="@style/playlistTextStyle"
+            android:background="@android:color/holo_orange_light"
+            android:text="@string/playlistText" />
+
+        <TextView
+            style="@style/playlistTextStyle"
+            android:background="@android:color/holo_orange_light"
+            android:text="@string/playlistText" />
+
+        <TextView
+            style="@style/playlistTextStyle"
+            android:background="@android:color/holo_orange_light"
+            android:text="@string/playlistText" />
+
+        <TextView
+            style="@style/playlistTextStyle"
+            android:background="@android:color/holo_orange_light"
+            android:text="@string/playlistText" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp">
+
+            <Button
+                android:id="@+id/playlist_fav_id"
+                style="@style/leftButtonStyle"
+                android:background="@drawable/favorite" />
+
+            <Button
+                android:id="@+id/playlist_play_id"
+                style="@style/rightButtonStyle"
+                android:background="@drawable/button_black_play" />
+
+            <Button
+                android:id="@+id/playlist_home_btn_id"
+                style="@style/midButtonStyle"
+                android:background="@drawable/home" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>
+

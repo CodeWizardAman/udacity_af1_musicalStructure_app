@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/scrollViewStyle"
+    android:background="@color/colorLightPink"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="60dp"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/activityLabelStyle"
+                android:text="@string/mainLabel"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:text="This is the home page of musical app. User can navigate to different activities through the button interface."
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/payment_id"
+                style="@style/homeButtonsLayout"
+                android:background="@drawable/pay"
+
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context="com.example.android.musicalapp.MainActivity">
+
+            <Button
+                android:id="@+id/play_button_id"
+                style="@style/homeButtonsLayout"
+                android:background="@drawable/button_black_play" />
+
+            <Button
+                android:id="@+id/playlist_button_id"
+                style="@style/homeButtonsLayout"
+                android:layout_toLeftOf="@id/play_button_id"
+                android:background="@drawable/playlist_4" />
+
+            <Button
+                android:id="@+id/artist_button_id"
+                style="@style/homeButtonsLayout"
+                android:layout_toRightOf="@id/play_button_id"
+                android:background="@drawable/artist_1" />
+
+            <Button
+                android:id="@+id/settings_button_id"
+                style="@style/homeButtonsLayout"
+                android:layout_below="@id/play_button_id"
+                android:background="@drawable/settings" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>

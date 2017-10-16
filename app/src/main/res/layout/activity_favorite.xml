@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/scrollViewStyle"
+    android:background="@color/colorLightPink"
+    tools:context=".FavoriteActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="40dp"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/activityLabelStyle"
+                android:background="@android:color/white"
+                android:text="@string/favLabel" />
+
+            <TextView
+                style="@style/favDesStyle"
+                android:background="@android:color/white"
+                android:text="@string/favActivityDes" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@android:color/holo_orange_dark">
+
+                <TextView
+                    android:id="@+id/song1_id"
+                    style="@style/favSongNameStyle"
+                    android:text="@string/song1"
+
+                    />
+
+                <TextView
+                    style="@style/favSongDurationStyle"
+                    android:text="@string/duration1" />
+
+                <View
+                    style="@style/dividerLineStyle"
+                    android:layout_below="@+id/song1_id"
+                    android:background="#000000" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/favSongLayStyle"
+                android:background="@android:color/holo_orange_dark">
+
+                <TextView
+                    android:id="@+id/song2_id"
+                    style="@style/favSongNameStyle"
+                    android:text="@string/song2"
+                    android:textSize="18sp" />
+
+                <TextView
+                    style="@style/favSongDurationStyle"
+                    android:text="@string/duration2"
+
+                    />
+
+                <View
+                    style="@style/dividerLineStyle"
+                    android:layout_below="@+id/song2_id"
+                    android:background="#000000" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/favSongLayStyle"
+                android:background="@android:color/holo_orange_dark">
+
+                <TextView
+                    android:id="@+id/song3_id"
+                    style="@style/favSongNameStyle"
+                    android:text="@string/song3"
+
+                    />
+
+                <TextView
+                    style="@style/favSongDurationStyle"
+                    android:text="@string/duration3" />
+
+                <View
+                    style="@style/dividerLineStyle"
+                    android:layout_below="@+id/song3_id"
+                    android:background="#000000" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/favSongLayStyle"
+                android:background="@android:color/holo_orange_dark">
+
+                <TextView
+                    android:id="@+id/song4_id"
+                    style="@style/favSongNameStyle"
+                    android:text="@string/song4"
+
+                    />
+
+                <TextView
+                    style="@style/favSongDurationStyle"
+                    android:text="@string/duration4"
+
+                    />
+
+                <View
+                    style="@style/dividerLineStyle"
+                    android:layout_below="@+id/song4_id"
+                    android:background="#000000" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="130dp">
+
+                <Button
+                    android:id="@+id/fav_artist_id"
+                    style="@style/leftButtonStyle"
+                    android:background="@drawable/artist_1" />
+
+                <Button
+                    android:id="@+id/fav_home_btn_id"
+                    style="@style/midButtonStyle"
+                    android:background="@drawable/home" />
+
+                <Button
+                    android:id="@+id/fav_playlist_id"
+                    style="@style/rightButtonStyle"
+                    android:background="@drawable/playlist_4" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
+

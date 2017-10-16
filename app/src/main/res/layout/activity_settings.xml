@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/scrollViewStyle"
+    android:background="@color/colorLightPink"
+    tools:context=".SettingsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/activityLabelStyle"
+                android:background="@android:color/white"
+                android:text="@string/settingsLabel" />
+
+            <TextView
+                style="@style/settingDescStyle"
+                android:background="@android:color/white"
+                android:text="@string/settingDescription" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <TextView
+                style="@style/settingTextStyle"
+                android:text="@string/autoSetting" />
+
+            <Switch style="@style/switchStyle" />
+
+        </RelativeLayout>
+
+        <View
+            style="@style/dividerLineStyle"
+            android:background="@color/colorPrimaryDark" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <TextView
+                style="@style/settingTextStyle"
+                android:text="@string/shakeSetting" />
+
+            <Switch style="@style/switchStyle" />
+        </RelativeLayout>
+
+        <View
+            style="@style/dividerLineStyle"
+            android:background="@color/colorPrimaryDark" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <TextView
+                style="@style/settingTextStyle"
+                android:text="@string/equalizerSetting" />
+
+            <Switch style="@style/switchStyle" />
+
+        </RelativeLayout>
+
+        <View
+            style="@style/dividerLineStyle"
+            android:background="@color/colorPrimaryDark" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp">
+
+            <Button
+                android:id="@+id/homeBtn_id"
+                style="@style/midButtonStyle"
+                android:background="@drawable/home" />
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>
